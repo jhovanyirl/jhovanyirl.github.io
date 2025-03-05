@@ -3,28 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medio Ambiente y Salud</title>
+    <title>Medio Ambiente y Salud Pública</title>
+    <style>
+        body {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #2e7d32;
+            text-align: center;
+        }
+        
+        /* Contenedor del fondo animado */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.pexels.com/photos/142497/pexels-photo-142497.jpeg') repeat-x;
+            background-size: cover;
+            animation: moveBackground 30s linear infinite;
+            z-index: -1;
+        }
+        
+        /* Animación para mover el fondo */
+        @keyframes moveBackground {
+            from { background-position: 0 0; }
+            to { background-position: -3000px 0; }
+        }
+
+        /* Contenido de la página */
+        .content {
+            position: relative;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.85);
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        header {
+            background-color: #1b5e20;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        header img {
+            width: 50px;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .nav button {
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .nav button:hover {
+            background-color: #1b5e20;
+            transform: scale(1.1);
+        }
+        .container {
+            display: none;
+        }
+        .active {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        #fullImage {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        #fullImage img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        #fullImage span {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+        /* Imagen más pequeña en la sección de inicio */
+        .intro img {
+            width: 250px; /* Ajustamos el tamaño */
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.container').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+        function viewImage(src) {
+            document.getElementById("fullImage").style.display = "flex";
+            document.getElementById("fullImage").querySelector("img").src = src;
+        }
+        function closeImage() {
+            document.getElementById("fullImage").style.display = "none";
+        }
+    </script>
 </head>
 <body>
-    <main>
-        <h1>La relacion entre el medio ambiente y la salud publica</h1>
-        <a href="https://freecatphotoapp.com"><img width="200" src="https://static.vecteezy.com/system/resources/previews/022/228/110/non_2x/earth-green-environmentally-icon-free-png.png" alt="Medio Ambiente y Salud Publica"></a>
-        <h2>Mapa Mental</h2>
-        <h3>¿Que es Medio ambiente y Salud Publica y cual es su importancia?</h3>
-        <a href="https://freecatphotoapp.com"><img width="400" src="https://www.canva.com/design/DAGggwXohwk/vX5h4DJ5Y9rBORYa_6swEg/view?utm_content=DAGggwXohwk&utm_campaign=designshare&utm_medium=link&utm_source=viewer" alt="Medio Ambiente y Salud Publica"></a>
-        <h2>Infografia</h2>
-        <h3>¿Cuales son los principios de Medio Ambiente y Salud Publica?</h3>
-        <a href="https://freecatphotoapp.com"><img width="300" src="https://cdn1.iconfinder.com/data/icons/social-17/48/video-256.png" alt="Medio Ambiente y Salud Publica"></a>
-        <h2>Linea de Tiempo</h2>
-        <h3>¿Como ha evolucionado el Medio Ambiente y Salud Publica a lo largo del tiempo?</h3>
-        <a href="https://freecatphotoapp.com"><img width="800" src="https://d3n817fwly711g.cloudfront.net/uploads/2020/03/Timeline-Diagram-Template-14-1024x401.png" alt="Medio Ambiente y Salud Publica"></a>
-        <h2>Cuadro Comparativo</h2>
-        <h3>¿Cuales son las leyes y normativas mas importantes que promueven el Medio Ambiente y Salud Publica a nivel internacional?</h3>
-        <a href="https://freecatphotoapp.com"><img width="800" src="https://images.edrawsoft.com/articles/comparison-chart-maker/top-banner.png" alt="Medio Ambiente y Salud Publica"></a>
-        <h2>Caligrama</h2>
-        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Medio Ambiente y Salud Publica"></a>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam expedita, impedit odit sit aspernatur voluptatibus eveniet maiores quasi fugit eum repellat aliquam, eaque veritatis assumenda ullam accusamus voluptatum vero libero</p>
-        <h2>Mapa Mental</h2>
-    </main>
+    <div class="background"></div>  <!-- Fondo animado -->
+
+    <div class="content">
+        <header>
+            <img src="https://img.freepik.com/vector-gratis/dibujado-mano-dia-mundial-medio-ambiente-salva-planeta-ilustracion_52683-61570.jpg" alt="Logotipo">
+            Medio Ambiente y Salud Pública
+        </header>
+        <nav class="nav">
+            <button onclick="showSection('inicio')">Inicio</button>
+            <button onclick="showSection('mapaMental')">Mapa Mental</button>
+            <button onclick="showSection('infografia')">Infografía</button>
+            <button onclick="showSection('lineaTiempo')">Línea de Tiempo</button>
+            <button onclick="showSection('cuadroComparativo')">Cuadro Comparativo</button>
+        </nav>
+        <main>
+            <div id="inicio" class="container active">
+                <div class="intro">
+                    <p>El medio ambiente influye directamente en la salud pública. La contaminación del aire, el agua y el manejo de residuos impactan nuestra calidad de vida. Es fundamental tomar medidas para preservar el equilibrio ecológico y garantizar un futuro saludable para todos.</p>
+                    <img src="https://img.freepik.com/vector-gratis/dibujado-mano-dia-mundial-medio-ambiente-salva-planeta-ilustracion_52683-61570.jpg" alt="Medio Ambiente">
+                </div>
+            </div>
+            <div id="mapaMental" class="container">
+                <div class="card">
+                    <h2>¿Qué es el Medio Ambiente y Salud Pública?</h2>
+                    <p>El medio ambiente y la salud pública están estrechamente relacionados. Un entorno saludable reduce enfermedades y mejora la calidad de vida. La contaminación y el cambio climático pueden afectar gravemente la salud de las personas, por lo que es vital cuidar nuestro ecosistema.</p>
+                    <img src="https://s11.aconvert.com/convert/p3r68-cdx67/ksf99-9l29w.webp" alt="Mapa Mental" onclick="viewImage(this.src)">
+                </div>
+            </div>
+        </main>
+        <div id="fullImage" onclick="closeImage()">
+            <span>&times;</span>
+            <img src="" alt="Imagen Ampliada">
+        </div>
+        <footer>
+            &copy; 2025 Medio Ambiente y Salud Pública - Todos los derechos reservados
+        </footer>
+    </div>
 </body>
 </html>
