@@ -65,6 +65,9 @@
             margin-top: 10px;
             margin-bottom: 20px;
         }
+        .nav a {
+            color: white;
+        }
         .nav button {
             background-color: #2e7d32;
             color: white;
@@ -72,7 +75,7 @@
             padding: 15px 25px;
             cursor: pointer;
             border-radius: 10px;
-            font-size: 12px;
+            font-size: 16px;
             transition: 0.3s;
         }
         .nav button:hover {
@@ -93,7 +96,7 @@
             padding: 15px;
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            width: 900px;
             text-align: center;
         }
         .card img {
@@ -197,17 +200,12 @@
             Medio Ambiente y Salud Pública
         </header>
         <nav class="nav">
-            <button onclick="showSection('inicio')">Inicio</button>
-            <button onclick="showSection('mapaMental')">Mapa Mental con conceptos clave y su relación</button>
-            <button onclick="showSection('infografia')">Infografía con los pilares fundamentales</button>
-            <button onclick="showSection('lineaTiempo')">Línea de Tiempo con hitos históricos y avances</button>
-            <button onclick="showSection('cuadroComparativo')">Cuadro Comparativo legislaciones y sus enfoques</button>
-            <button onclick="showSection('nubedepalabras')">Nube de palabras con términos clave</button>
-            <button onclick="showSection('cuadroComparativo2')">Cuadro comparativo desafíos y estrategias</button>
-            <button onclick="showSection('infografia2')">Infografía con estrategias, TIC, metodologías activas.</button>
-            <button onclick="showSection('infografia3')">Infografía con casos de éxito</button>
-            <button onclick="showSection('mapamental2')">Mapa mental con herramientas</button>
-            <button onclick="showSection('lineatiempo2')">Línea del tiempo con predicciones y avances esperados</button>
+            <button onclick="showSection('inicio')"><a href="index.html">Inicio</a></button>
+            <button onclick="showSection('conceptoyfundamentos')">Concepto y Fundamentos</button>
+            <button onclick="showSection('evolucionylegislacion')">Evolución y Legislación</button>
+            <button onclick="showSection('barrerasydesafios')">Barreras y Desafíos</button>
+            <button onclick="showSection('estrategiasybuenaspracticas')">Estrategias y Buenas Prácticas</button>
+            <button onclick="showSection('tecnologiayfuturo')">Tecnología y Futuro del "Medio Ambiente y Salud Pública"</button>
         </nav>
         <div class="navbar">
             <div class="logo">PREGUNTAS</div>
@@ -229,63 +227,66 @@
                           title="Nube de palabras"></iframe>
                 </div>
             </div>
-            <div id="mapaMental" class="container">
+            <div id="conceptoyfundamentos" class="container">
                 <div class="card">
                     <h2>¿Qué es el "Medio Ambiente y Salud Pública" cuál es su importancia??</h2>
-                    <p>El medio ambiente y la salud pública están estrechamente relacionados. Un entorno saludable reduce enfermedades y mejora la calidad de vida. La contaminación y el cambio climático pueden afectar gravemente la salud de las personas, por lo que es vital cuidar nuestro ecosistema.</p>
-                    <img src="mapamental.jpg.jpg" onclick="viewImage(this.src)">
-                </div>
-            </div>
-            <div id="infografia" class="container">
-                <div class="card">
+                    <iframe
+                    src="https://www.canva.com/design/DAGggwXohwk/vX5h4DJ5Y9rBORYa_6swEg/view?utm_content=DAGggwXohwk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb0fdfe6478"
+                    width="100%"
+                    height="400"
+                    frameborder="0"
+                    allowfullscreen
+                    title="Nube de palabras"></iframe>
                     <h2>¿Cuáles son los principios de "Medio Ambiente y Salud Pública"?</h2>
                     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.slidesharecdn.com%2Fejemplo-120609222200-phpapp02%2F85%2FEjemplo-1-320.jpg&f=1&nofb=1&ipt=a1263eb1efacfa734e96743dd61e1fb655bd163c6f61f616532377fce5a28a10" onclick="viewImage(this.src)">
                 </div>
             </div>
-            <div id="lineaTiempo" class="container">
+            <div id="evolucionylegislacion" class="container">
                 <div class="card">
                     <h2>¿Cómo ha evolucionado "Medio Ambiente y Salud Pública" a lo largo del tiempo?</h2>
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.slidesharecdn.com%2Fejemplo-120609222200-phpapp02%2F85%2FEjemplo-1-320.jpg&f=1&nofb=1&ipt=a1263eb1efacfa734e96743dd61e1fb655bd163c6f61f616532377fce5a28a10" onclick="viewImage(this.src)">
-                </div>
-            </div>
-            <div id="cuadroComparativo" class="container">
-                <div class="card">
+                    <iframe
+                    src="https://www.mymap.ai/share/lnea-de-tiempo-de-hitos-legales-y-ambientales-en-colombia-vWiXNop2aT1la"
+                    width="100%"
+                    height="400"
+                    frameborder="0"
+                    allowfullscreen
+                    title="Nube de palabras"></iframe>
                     <h2>¿Cuáles son las leyes y normativas más importantes que promueven "Medio Ambiente y Salud Pública" y a nivel internacional?</h2>
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.slidesharecdn.com%2Fejemplo-120609222200-phpapp02%2F85%2FEjemplo-1-320.jpg&f=1&nofb=1&ipt=a1263eb1efacfa734e96743dd61e1fb655bd163c6f61f616532377fce5a28a10" onclick="viewImage(this.src)">
+                    <iframe
+                    src="https://www.canva.com/design/DAGmITIdHhY/bA9pHK_amYf8a2h1__NT2A/view"
+                    width="100%"
+                    height="400"
+                    frameborder="0"
+                    allowfullscreen
+                    title="Nube de palabras"></iframe>
                 </div>
             </div>
-            <div id="nubedepalabras" class="container">
+            <div id="barrerasydesafios" class="container">
                 <div class="card">
                     <h2>¿Cuáles son las principales barreras que enfrentan "Medio Ambiente y Salud Pública"?</h2>
                     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.slidesharecdn.com%2Fejemplo-120609222200-phpapp02%2F85%2FEjemplo-1-320.jpg&f=1&nofb=1&ipt=a1263eb1efacfa734e96743dd61e1fb655bd163c6f61f616532377fce5a28a10" onclick="viewImage(this.src)">
-                </div>
-            </div>
-            <div id="cuadroComparativo2" class="container">
-                <div class="card">
                     <h2>¿Qué desafíos enfrentan "Medio Ambiente y Salud Pública"?</h2>
                     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.slidesharecdn.com%2Fejemplo-120609222200-phpapp02%2F85%2FEjemplo-1-320.jpg&f=1&nofb=1&ipt=a1263eb1efacfa734e96743dd61e1fb655bd163c6f61f616532377fce5a28a10" onclick="viewImage(this.src)">
                 </div>
             </div>
-            <div id="infografia2" class="container">
+            <div id="estrategiasybuenaspracticas" class="container">
                 <div class="card">
                     <h2>¿Qué metodologías y herramientas se utilizan para promover la "Medio Ambiente y Salud Pública"?</h2>
                     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.slidesharecdn.com%2Fejemplo-120609222200-phpapp02%2F85%2FEjemplo-1-320.jpg&f=1&nofb=1&ipt=a1263eb1efacfa734e96743dd61e1fb655bd163c6f61f616532377fce5a28a10" onclick="viewImage(this.src)">
-                </div>
-            </div>
-            <div id="infografia3" class="container">
-                <div class="card">
                     <h2>¿Existen ejemplos "Medio Ambiente y Salud Pública" que han implementado exitosamente "Medio Ambiente y Salud Pública"?</h2>
                     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.slidesharecdn.com%2Fejemplo-120609222200-phpapp02%2F85%2FEjemplo-1-320.jpg&f=1&nofb=1&ipt=a1263eb1efacfa734e96743dd61e1fb655bd163c6f61f616532377fce5a28a10" onclick="viewImage(this.src)">
                 </div>
             </div>
-            <div id="mapamental2" class="container">
+            <div id="tecnologiayfuturo" class="container">
                 <div class="card">
                     <h2>¿Cómo pueden las TIC facilitar "Medio Ambiente y Salud Pública"?</h2>
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.slidesharecdn.com%2Fejemplo-120609222200-phpapp02%2F85%2FEjemplo-1-320.jpg&f=1&nofb=1&ipt=a1263eb1efacfa734e96743dd61e1fb655bd163c6f61f616532377fce5a28a10" onclick="viewImage(this.src)">
-                </div>
-            </div>
-            <div id="lineatiempo2" class="container">
-                <div class="card">
+                    <iframe
+                    src="https://coggle.it/diagram/aBJ2R8eQzBRMs1Eo/t/medio-ambiente-y-salud-p%C3%BAblica-medio-ambiente"
+                    width="100%"
+                    height="400"
+                    frameborder="0"
+                    allowfullscreen
+                    title="Nube de palabras"></iframe>
                     <h2>¿Qué tendencias o innovaciones están surgiendo para mejorar la "Medio Ambiente y Salud Pública"?</h2>
                     <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.slidesharecdn.com%2Fejemplo-120609222200-phpapp02%2F85%2FEjemplo-1-320.jpg&f=1&nofb=1&ipt=a1263eb1efacfa734e96743dd61e1fb655bd163c6f61f616532377fce5a28a10" onclick="viewImage(this.src)">
                 </div>
