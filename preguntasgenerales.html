@@ -1,194 +1,198 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medio Ambiente y Salud Pública</title>
-    <style>
-        body {
-            font-family: "Comic Sans MS", cursive, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #2e7d32;
-            text-align: center;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Medio Ambiente y Salud Pública</title>
+        <style>
+            body {
+                font-family: "Comic Sans MS", cursive, sans-serif;
+                margin: 0;
+                padding: 0;
+                color: #2e7d32;
+                text-align: center;
+            }
+            
+            /* Contenedor del fondo animado */
+            .background {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: url('https://images.pexels.com/photos/142497/pexels-photo-142497.jpeg') repeat-x;
+                background-size: cover;
+                animation: moveBackground 30s linear infinite;
+                z-index: -1;
+            }
+            
+            /* Animación para mover el fondo */
+            @keyframes moveBackground {
+                from { background-position: 0 0; }
+                to { background-position: -3000px 0; }
+            }
+    
+            /* Contenido de la página */
+            .content {
+                position: relative;
+                z-index: 1;
+                background: rgba(255, 255, 255, 0.85);
+                padding: 20px;
+                border-radius: 10px;
+                width: 100%;
+                max-width: 800px;
+                margin: auto;
+                margin-top: 20px;
+            }
+    
+            header {
+                background-color: #1b5e20;
+                color: white;
+                padding: 20px;
+                font-size: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+            }
+            header img {
+                width: 50px;
+            }
+            .nav {
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            .nav a {
+                color: white;
+            }
+            .nav button {
+                background-color: #2e7d32;
+                color: white;
+                border: none;
+                padding: 10px 5px;
+                cursor: pointer;
+                border-radius: 5px;
+                font-size: 12px;
+                transition: 0.3s;
+            }
+            .nav button:hover {
+                background-color: #1b5e20;
+                transform: scale(1.1);
+            }
+            .container {
+                display: none;
+            }
+            .active {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+            .card {
+                background: white;
+                padding: 15px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                width: 600px;
+                text-align: center;
+                margin-top: 10px;
+            }
+            .card img {
+                width: 100%;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+            footer {
+                background-color: #1b5e20;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                margin-top: 20px;
+            }
+            #fullImage {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                display: none;
+                justify-content: center;
+                align-items: center;
+            }
+            #fullImage img {
+                max-width: 90%;
+                max-height: 90%;
+            }
+            #fullImage span {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                font-size: 30px;
+                color: white;
+                cursor: pointer;
+            }
+            /* Imagen más pequeña en la sección de inicio */
+            .intro img {
+                width: 250px; /* Ajustamos el tamaño */
+                border-radius: 10px;
+            }
+        </style>
+        <script>
+            function showSection(sectionId) {
+                document.querySelectorAll('.container').forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.getElementById(sectionId).classList.add('active');
+            }
+            function viewImage(src) {
+                document.getElementById("fullImage").style.display = "flex";
+                document.getElementById("fullImage").querySelector("img").src = src;
+            }
+            function closeImage() {
+                document.getElementById("fullImage").style.display = "none";
+            }
+        </script>
+         <style>
+            body {
+              margin: 0;
+              font-family: Arial, sans-serif;
+            }
         
-        /* Contenedor del fondo animado */
-        .background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('https://images.pexels.com/photos/142497/pexels-photo-142497.jpeg') repeat-x;
-            background-size: cover;
-            animation: moveBackground 30s linear infinite;
-            z-index: -1;
-        }
+            .navbar {
+              background-color: whitesmoke;
+              overflow: hidden;
+              display:flex;
+              justify-content:center;
+              align-items: center;
+              padding: 10px 20px;
+            }
         
-        /* Animación para mover el fondo */
-        @keyframes moveBackground {
-            from { background-position: 0 0; }
-            to { background-position: -3000px 0; }
-        }
-
-        /* Contenido de la página */
-        .content {
-            position: relative;
-            z-index: 1;
-            background: rgba(255, 255, 255, 0.85);
-            padding: 20px;
-            border-radius: 10px;
-            width: 90%;
-            max-width: 1400px;
-            margin: auto;
-            margin-top: 20px;
-        }
-
-        header {
-            background-color: #1b5e20;
-            color: white;
-            padding: 20px;
-            font-size: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-        header img {
-            width: 50px;
-        }
-        .nav {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 10px;
-            margin-bottom: 20px;
-        }
-        .nav button {
-            background-color: #2e7d32;
-            color: white;
-            border: none;
-            padding: 15px 25px;
-            cursor: pointer;
-            border-radius: 10px;
-            font-size: 12px;
-            transition: 0.3s;
-        }
-        .nav button:hover {
-            background-color: #1b5e20;
-            transform: scale(1.1);
-        }
-        .container {
-            display: none;
-        }
-        .active {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .card {
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
-        }
-        .card img {
-            width: 100%;
-            cursor: pointer;
-            border-radius: 10px;
-        }
-        footer {
-            background-color: #1b5e20;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        #fullImage {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            display: none;
-            justify-content: center;
-            align-items: center;
-        }
-        #fullImage img {
-            max-width: 90%;
-            max-height: 90%;
-        }
-        #fullImage span {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 30px;
-            color: white;
-            cursor: pointer;
-        }
-        /* Imagen más pequeña en la sección de inicio */
-        .intro img {
-            width: 250px; /* Ajustamos el tamaño */
-            border-radius: 10px;
-        }
-    </style>
-    <script>
-        function showSection(sectionId) {
-            document.querySelectorAll('.container').forEach(section => {
-                section.classList.remove('active');
-            });
-            document.getElementById(sectionId).classList.add('active');
-        }
-        function viewImage(src) {
-            document.getElementById("fullImage").style.display = "flex";
-            document.getElementById("fullImage").querySelector("img").src = src;
-        }
-        function closeImage() {
-            document.getElementById("fullImage").style.display = "none";
-        }
-    </script>
-     <style>
-        body {
-          margin: 0;
-          font-family: Arial, sans-serif;
-        }
-    
-        .navbar {
-          background-color: whitesmoke;
-          overflow: hidden;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 10px 20px;
-        }
-    
-        .navbar a {
-          color:chartreuse;
-          padding: 14px 20px;
-          text-decoration: none;
-          text-align: center;
-        }
-    
-        .navbar a:hover {
-          background-color:darkseagreen;
-        }
-    
-        .logo {
-          font-size: 20px;
-          font-weight: bold;
-          color:darkolivegreen;
-        }
-    
-        .nav-links {
-          display: flex;
-        }
-      </style>
-</head>
+            .navbar a {
+              color:chartreuse;
+              padding: 14px 20px;
+              text-decoration: none;
+              text-align: center;
+            }
+        
+            .navbar a:hover {
+              background-color:darkseagreen;
+            }
+        
+            .logo {
+              font-size: 20px;
+              font-weight: bold;
+              color:darkolivegreen;
+            }
+        
+            .nav-links {
+              display: flex;
+            }
+          </style>
+    </head>
 <body>
     <div class="background"></div>  <!-- Fondo animado -->
     <div class="content">
@@ -196,15 +200,11 @@
             <img src="https://img.freepik.com/vector-gratis/dibujado-mano-dia-mundial-medio-ambiente-salva-planeta-ilustracion_52683-61570.jpg" alt="Logotipo">
             Medio Ambiente y Salud Pública
         </header>
-        <nav class="nav">
-            <button onclick="showSection('inicio')">Inicio</button>
-        </nav>
         <div class="navbar">
-            <div class="logo">PREGUNTAS</div>
             <div class="nav-links">
+                <a href="index.html">Inicio</a>
               <a href="preguntasgenerales.html">Preguntas Generales</a>
               <a href="preguntasespecificas.html">Preguntas Específicas</a>
-              <a href="index.html">PAGINA PRINCIPAL</a>
             </div>
           </div>
         <main>
