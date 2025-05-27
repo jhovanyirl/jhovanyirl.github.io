@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cuadro Comparativo - Medio Ambiente y Salud Pública</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #e0f2f1, #e3f2fd);
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #00695c;
+      margin-bottom: 40px;
+    }
+
+    .comparativo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .cuadro {
+      border: 2px solid #80cbc4;
+      border-radius: 12px;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .cuadro:hover {
+      transform: scale(1.02);
+      background-color: #f1f8e9;
+    }
+
+    .titulo {
+      font-size: 18px;
+      font-weight: bold;
+      color: #0277bd;
+      margin-bottom: 10px;
+    }
+
+    .numero {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+
+    .descripcion {
+      font-size: 16px;
+      color: #424242;
+    }
+
+    @media screen and (max-width: 768px) {
+      .comparativo {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Desafíos vs Estrategias<br> Medio Ambiente y Salud Pública</h1>
+
+  <div class="comparativo">
+
+    <div class="cuadro">
+      <div class="numero">1</div>
+      <div class="titulo">Desafío: Aire contaminado en zonas urbanas</div>
+      <div class="descripcion">Altas concentraciones de partículas PM2.5 por tráfico y fábricas.</div>
+    </div>
+    <div class="cuadro">
+      <div class="numero">1</div>
+      <div class="titulo">Estrategia: Movilidad sostenible</div>
+      <div class="descripcion">Promover uso de bicicleta, transporte eléctrico y zonas peatonales.</div>
+    </div>
+
+    <div class="cuadro">
+      <div class="numero">2</div>
+      <div class="titulo">Desafío: Agua potable contaminada</div>
+      <div class="descripcion">Presencia de metales pesados, bacterias y químicos en el agua de consumo.</div>
+    </div>
+    <div class="cuadro">
+      <div class="numero">2</div>
+      <div class="titulo">Estrategia: Sistemas de filtración y protección hídrica</div>
+      <div class="descripcion">Instalación de plantas de tratamiento y campañas para el cuidado de fuentes naturales.</div>
+    </div>
+
+    <div class="cuadro">
+      <div class="numero">3</div>
+      <div class="titulo">Desafío: Residuos sólidos mal manejados</div>
+      <div class="descripcion">Acumulación de basura en ríos, calles y zonas verdes.</div>
+    </div>
+    <div class="cuadro">
+      <div class="numero">3</div>
+      <div class="titulo">Estrategia: Economía circular y reciclaje</div>
+      <div class="descripcion">Promoción de separación en la fuente, compostaje y reutilización de materiales.</div>
+    </div>
+
+    <div class="cuadro">
+      <div class="numero">4</div>
+      <div class="titulo">Desafío: Enfermedades transmitidas por vectores</div>
+      <div class="descripcion">Casos de dengue, chikungunya y zika en zonas con criaderos de mosquitos.</div>
+    </div>
+    <div class="cuadro">
+      <div class="numero">4</div>
+      <div class="titulo">Estrategia: Educación sanitaria y control vectorial</div>
+      <div class="descripcion">Jornadas de recolección, campañas informativas y uso de bioinsecticidas.</div>
+    </div>
+
+    <div class="cuadro">
+      <div class="numero">5</div>
+      <div class="titulo">Desafío: Cambio climático y fenómenos extremos</div>
+      <div class="descripcion">Aumento de temperaturas, incendios forestales e inundaciones.</div>
+    </div>
+    <div class="cuadro">
+      <div class="numero">5</div>
+      <div class="titulo">Estrategia: Adaptación climática</div>
+      <div class="descripcion">Planificación urbana sostenible, reforestación y alertas tempranas.</div>
+    </div>
+
+    <div class="cuadro">
+      <div class="numero">6</div>
+      <div class="titulo">Desafío: Inequidad en servicios de salud</div>
+      <div class="descripcion">Zonas rurales sin acceso a atención médica ni agua limpia.</div>
+    </div>
+    <div class="cuadro">
+      <div class="numero">6</div>
+      <div class="titulo">Estrategia: Atención primaria integral</div>
+      <div class="descripcion">Brigadas móviles, telemedicina y acceso a saneamiento básico.</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
