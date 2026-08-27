@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Campesinos — Asociación Campesina</title>
+<title>Campesinos — Agrocampuritol</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -14,15 +14,15 @@
   <!-- NAVEGACIÓN (idéntica en todas las páginas) -->
   <header class="header">
     <nav class="nav">
-      <a href="/" class="logo">
-        <img src="https://placehold.co/36x36/2F3B24/FAFAF6?text=AC" alt="Logo Asociación">
-        <span>Asociación Campesina</span>
+      <a href="index.html" class="logo">
+        <img src="../Images/Copilot_20260827_121454.png" alt="Logo Agrocampuritol">
+        <span>Agrocampuritol</span>
       </a>
       <ul class="nav-links">
-        <li><a href="/asociacion">Asociación</a></li>
-        <li><a href="/campesinos" aria-current="page">Campesinos</a></li>
-        <li><a href="/produccion-mercado">Producción y Mercado</a></li>
-        <li><a href="/recursos">Recursos</a></li>
+        <li><a href="index.html">Asociación</a></li>
+        <li><a href="campesinos.html" aria-current="page">Campesinos</a></li>
+        <li><a href="produccion-mercado.html">Producción y Mercado</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
       </ul>
       <a href="/afiliarse" class="btn-afiliarse">Afiliarse</a>
       <button class="nav-toggle" aria-label="Abrir menú">☰</button>
@@ -33,8 +33,8 @@
   <section class="page-hero">
     <div class="contenedor">
       <span class="eyebrow">Campesinos</span>
-      <h1>Las personas detrás de cada cosecha</h1>
-      <p>Conoce a los productores asociados: quiénes son, dónde trabajan y qué cultivan. Este directorio crece con cada nueva familia que se afilia.</p>
+      <h1>Apoyo para fortalecer el trabajo en el campo</h1>
+      <p>Encuentra los servicios, oportunidades y herramientas que la asociación pone a disposición de sus campesinos asociados.</p>
     </div>
   </section>
 
@@ -42,104 +42,85 @@
   <div class="contenedor">
     <div class="filtros">
       <button class="filtro activo">Todos</button>
-      <button class="filtro">Región Andina</button>
-      <button class="filtro">Región Caribe</button>
-      <button class="filtro">Región Pacífica</button>
-      <button class="filtro">Región Amazónica</button>
+      <button class="filtro">Organización</button>
+      <button class="filtro">Capacitación</button>
+      <button class="filtro">Producción</button>
+      <button class="filtro">Oportunidades</button>
     </div>
   </div>
 
-  <!-- LISTADO: patrón de tarjeta de campesino, repetible -->
+  <!-- LISTADO: patrón de acceso para campesinos, repetible -->
   <section class="seccion-contenido">
     <div class="contenedor">
-      <h2 class="titulo-bloque">Directorio de campesinos</h2>
+      <h2 class="titulo-bloque">Servicios para campesinos</h2>
 
-      <div class="grid-tarjetas">
+      <!-- PATRÓN DE TARJETA — copiar este bloque .tarjeta-fila para añadir un nuevo servicio -->
+      <a href="#" class="tarjeta-fila">
+        <span class="tarjeta-fila-icono">🤝</span>
+        <div class="tarjeta-fila-cuerpo">
+          <h3>Afiliación</h3>
+          <span class="tarjeta-meta">Únete a la asociación y conoce los requisitos para participar.</span>
+        </div>
+        <span class="tarjeta-fila-accion">Conocer</span>
+      </a>
+      <!-- FIN PATRÓN -->
 
-        <!-- PATRÓN DE TARJETA — copiar este bloque .tarjeta para añadir un nuevo campesino -->
-        <article class="tarjeta">
-          <div class="tarjeta-imagen">
-            <img src="https://placehold.co/400x300/E8E3D3/2F3B24?text=Foto" alt="Retrato del campesino">
-          </div>
-          <div class="tarjeta-cuerpo">
-            <span class="tarjeta-etiqueta">Región Andina</span>
-            <h3>María Elena Ruiz</h3>
-            <span class="tarjeta-meta">Cultiva papa y quinua · Boyacá</span>
-            <p class="descripcion-breve">Vinculada a la asociación desde 2014, lidera el comité de semillas nativas de su vereda.</p>
-            <a href="#" class="tarjeta-enlace">Ver perfil</a>
-          </div>
-        </article>
-        <!-- FIN PATRÓN -->
+      <a href="#" class="tarjeta-fila">
+        <span class="tarjeta-fila-icono">🎓</span>
+        <div class="tarjeta-fila-cuerpo">
+          <h3>Formación</h3>
+          <span class="tarjeta-meta">Talleres y capacitaciones para fortalecer tus conocimientos.</span>
+        </div>
+        <span class="tarjeta-fila-accion">Ver oferta</span>
+      </a>
 
-        <article class="tarjeta">
-          <div class="tarjeta-imagen">
-            <img src="https://placehold.co/400x300/E8E3D3/2F3B24?text=Foto" alt="Retrato del campesino">
-          </div>
-          <div class="tarjeta-cuerpo">
-            <span class="tarjeta-etiqueta">Región Caribe</span>
-            <h3>José Antonio Pérez</h3>
-            <span class="tarjeta-meta">Cultiva yuca y ñame · Córdoba</span>
-            <p class="descripcion-breve">Coordina la producción colectiva de su vereda y participa en la junta directiva regional.</p>
-            <a href="#" class="tarjeta-enlace">Ver perfil</a>
-          </div>
-        </article>
+      <a href="#" class="tarjeta-fila">
+        <span class="tarjeta-fila-icono">🌱</span>
+        <div class="tarjeta-fila-cuerpo">
+          <h3>Asistencia técnica</h3>
+          <span class="tarjeta-meta">Acompañamiento para mejorar tus cultivos y prácticas productivas.</span>
+        </div>
+        <span class="tarjeta-fila-accion">Solicitar</span>
+      </a>
 
-        <article class="tarjeta">
-          <div class="tarjeta-imagen">
-            <img src="https://placehold.co/400x300/E8E3D3/2F3B24?text=Foto" alt="Retrato del campesino">
-          </div>
-          <div class="tarjeta-cuerpo">
-            <span class="tarjeta-etiqueta">Región Pacífica</span>
-            <h3>Carmen Rosa Valencia</h3>
-            <span class="tarjeta-meta">Cultiva cacao y plátano · Nariño</span>
-            <p class="descripcion-breve">Impulsa un proyecto de cacao orgánico certificado junto a otras 12 familias.</p>
-            <a href="#" class="tarjeta-enlace">Ver perfil</a>
-          </div>
-        </article>
+      <a href="#" class="tarjeta-fila">
+        <span class="tarjeta-fila-icono">📋</span>
+        <div class="tarjeta-fila-cuerpo">
+          <h3>Proyectos</h3>
+          <span class="tarjeta-meta">Iniciativas colectivas para impulsar el desarrollo rural.</span>
+        </div>
+        <span class="tarjeta-fila-accion">Conocer</span>
+      </a>
 
-        <article class="tarjeta">
-          <div class="tarjeta-imagen">
-            <img src="https://placehold.co/400x300/E8E3D3/2F3B24?text=Foto" alt="Retrato del campesino">
-          </div>
-          <div class="tarjeta-cuerpo">
-            <span class="tarjeta-etiqueta">Región Amazónica</span>
-            <h3>Luis Fernando Tapia</h3>
-            <span class="tarjeta-meta">Cultiva cacao y frutales · Putumayo</span>
-            <p class="descripcion-breve">Trabaja en sistemas agroforestales y capacita a nuevos socios en manejo de suelos.</p>
-            <a href="#" class="tarjeta-enlace">Ver perfil</a>
-          </div>
-        </article>
+      <a href="#" class="tarjeta-fila">
+        <span class="tarjeta-fila-icono">🛠</span>
+        <div class="tarjeta-fila-cuerpo">
+          <h3>Herramientas</h3>
+          <span class="tarjeta-meta">Recursos prácticos, formatos y materiales para tu labor.</span>
+        </div>
+        <span class="tarjeta-fila-accion">Consultar</span>
+      </a>
 
-        <article class="tarjeta">
-          <div class="tarjeta-imagen">
-            <img src="https://placehold.co/400x300/E8E3D3/2F3B24?text=Foto" alt="Retrato del campesino">
-          </div>
-          <div class="tarjeta-cuerpo">
-            <span class="tarjeta-etiqueta">Región Andina</span>
-            <h3>Rosalba Gómez</h3>
-            <span class="tarjeta-meta">Cultiva hortalizas · Cundinamarca</span>
-            <p class="descripcion-breve">Encabeza el grupo de mujeres productoras y su huerta comunitaria.</p>
-            <a href="#" class="tarjeta-enlace">Ver perfil</a>
-          </div>
-        </article>
+      <a href="#" class="tarjeta-fila">
+        <span class="tarjeta-fila-icono">📣</span>
+        <div class="tarjeta-fila-cuerpo">
+          <h3>Convocatorias</h3>
+          <span class="tarjeta-meta">Oportunidades abiertas para organizaciones y productores.</span>
+        </div>
+        <span class="tarjeta-fila-accion">Ver abiertas</span>
+      </a>
 
-        <article class="tarjeta">
-          <div class="tarjeta-imagen">
-            <img src="https://placehold.co/400x300/E8E3D3/2F3B24?text=Foto" alt="Retrato del campesino">
-          </div>
-          <div class="tarjeta-cuerpo">
-            <span class="tarjeta-etiqueta">Región Caribe</span>
-            <h3>Eduardo Martínez</h3>
-            <span class="tarjeta-meta">Cultiva maíz y ajonjolí · Sucre</span>
-            <p class="descripcion-breve">Parte de la segunda generación de su familia dentro de la asociación.</p>
-            <a href="#" class="tarjeta-enlace">Ver perfil</a>
-          </div>
-        </article>
-
-      </div>
+      <a href="#" class="tarjeta-fila">
+        <span class="tarjeta-fila-icono">⭐</span>
+        <div class="tarjeta-fila-cuerpo">
+          <h3>Beneficios</h3>
+          <span class="tarjeta-meta">Conoce las ventajas y alianzas disponibles para asociados.</span>
+        </div>
+        <span class="tarjeta-fila-accion">Conocer</span>
+      </a>
 
       <div class="cargar-mas">
-        <button class="btn-secundario">Cargar más campesinos</button>
+        <button class="btn-secundario">Ver todos los servicios</button>
       </div>
     </div>
   </section>
