@@ -89,8 +89,6 @@ h2, h3, h4 {
 
 .logo img {
   border-radius: 50%;
-  width: 50px;
-  height: auto;
 }
 
 .nav-links {
@@ -134,6 +132,51 @@ h2, h3, h4 {
   font-size: 1.4rem;
   cursor: pointer;
   color: var(--color-primary-dark);
+}
+
+/* Estado abierto del menú móvil (activado por script.js) */
+@media (max-width: 860px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-2) var(--space-3);
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--color-border);
+    width: 100%;
+  }
+
+  .nav-links a:last-child { border-bottom: none; }
+
+  .btn-afiliarse {
+    display: none;
+    order: 2;
+  }
+
+  .nav.abierto {
+    position: relative;
+  }
+
+  .nav.abierto .nav-links {
+    display: flex;
+  }
+
+  .nav.abierto .btn-afiliarse {
+    display: inline-block;
+    position: absolute;
+    top: calc(100% + var(--space-2));
+    right: var(--space-3);
+    z-index: 1;
+  }
 }
 
 /* ---------- 2. Banner de noticias ---------- */
@@ -368,6 +411,20 @@ h2, h3, h4 {
 .page-hero p {
   max-width: 58ch;
   color: var(--color-text-muted);
+}
+
+.intro-subseccion {
+  max-width: 58ch;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+}
+
+.titulo-banner {
+  margin-bottom: var(--space-3);
+}
+
+.metodos-produccion {
+  border-top: 1px solid var(--color-border);
 }
 
 /* ---------- Patrón: filtros ---------- */

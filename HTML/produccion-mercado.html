@@ -33,31 +33,61 @@
   <section class="page-hero">
     <div class="contenedor">
       <span class="eyebrow">Producción y Mercado</span>
-      <h1>Lo que se cosecha, lo que llega a la mesa</h1>
-      <p>Catálogo de productos cultivados por los asociados, con su temporada y punto de venta. Se actualiza cada temporada de cosecha.</p>
+      <h1>Lo que se cultiva, cómo se cultiva y cómo llega al mercado</h1>
+      <p>Productos, servicios y métodos de producción de la asociación, actualizados con cada temporada.</p>
     </div>
   </section>
 
-  <!-- FILTROS: se amplían añadiendo más botones .filtro -->
-  <div class="contenedor">
-    <div class="filtros">
-      <button class="filtro activo">Todos</button>
-      <button class="filtro">Granos</button>
-      <button class="filtro">Tubérculos</button>
-      <button class="filtro">Frutas</button>
-      <button class="filtro">Hortalizas</button>
-      <button class="filtro">Cacao y café</button>
-    </div>
-  </div>
+  <!-- MÉTODOS DE PRODUCCIÓN: mismo patrón de banner que la página de inicio -->
+  <section class="banner-noticias metodos-produccion">
+    <div class="banner-inner">
+      <h2 class="titulo-bloque titulo-banner">Métodos de producción</h2>
 
-  <!-- LISTADO: patrón de tarjeta de producto, repetible -->
-  <section class="seccion-contenido">
+      <!-- PATRÓN DE MÉTODO — copiar este bloque .noticia-destacada para añadir un nuevo método -->
+      <article class="noticia-destacada" data-tipo="metodo">
+        <div class="noticia-imagen">
+          <img src="https://placehold.co/560x360/E8E3D3/2F3B24?text=M%C3%A9todo" alt="Imagen del método de producción">
+        </div>
+        <div class="noticia-contenido">
+          <span class="categoria">Agroecología</span>
+          <h2 class="titulo">Sistemas agroforestales</h2>
+          <time class="fecha">Método vigente</time>
+          <p class="descripcion">Combinación de cultivos y árboles en una misma parcela para proteger el suelo y diversificar la producción.</p>
+          <a href="#" class="btn-leer-noticia">Ver método</a>
+        </div>
+      </article>
+      <!-- FIN PATRÓN -->
+
+      <div class="controles-navegacion">
+        <button class="ctrl anterior" aria-label="Método anterior">←</button>
+        <div class="indicadores">
+          <span class="punto activo"></span>
+          <span class="punto"></span>
+          <span class="punto"></span>
+        </div>
+        <button class="ctrl siguiente" aria-label="Método siguiente">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSECCIÓN: PRODUCTOS -->
+  <section class="seccion-contenido" id="productos">
     <div class="contenedor">
-      <h2 class="titulo-bloque">Catálogo de productos</h2>
+      <h2 class="titulo-bloque">Productos</h2>
+      <p class="intro-subseccion">Catálogo de productos cultivados por los asociados, con su temporada y origen.</p>
+
+      <div class="filtros">
+        <button class="filtro activo">Todos</button>
+        <button class="filtro">Granos</button>
+        <button class="filtro">Tubérculos</button>
+        <button class="filtro">Frutas</button>
+        <button class="filtro">Hortalizas</button>
+        <button class="filtro">Cacao y café</button>
+      </div>
 
       <div class="grid-tarjetas">
 
-        <!-- PATRÓN DE TARJETA — copiar este bloque .tarjeta para añadir un nuevo producto -->
+        <!-- PATRÓN DE TARJETA — copiar para añadir un nuevo producto -->
         <article class="tarjeta">
           <div class="tarjeta-imagen">
             <img src="https://placehold.co/400x300/E8E3D3/2F3B24?text=Producto" alt="Fotografía del producto">
@@ -142,6 +172,44 @@
       <div class="cargar-mas">
         <button class="btn-secundario">Cargar más productos</button>
       </div>
+    </div>
+  </section>
+
+  <!-- SUBSECCIÓN: SERVICIOS -->
+  <section class="seccion-contenido" id="servicios">
+    <div class="contenedor">
+      <h2 class="titulo-bloque">Servicios</h2>
+      <p class="intro-subseccion">Servicios relacionados con la comercialización y el acceso al mercado.</p>
+
+      <!-- PATRÓN DE TARJETA EN FILA — copiar para añadir un nuevo servicio -->
+      <a href="#" class="tarjeta-fila">
+        <span class="tarjeta-fila-icono">🚚</span>
+        <div class="tarjeta-fila-cuerpo">
+          <h3>Logística y transporte de cosecha</h3>
+          <span class="tarjeta-meta">Coordinación de recolección y traslado a puntos de venta</span>
+        </div>
+        <span class="tarjeta-fila-accion">Solicitar</span>
+      </a>
+      <!-- FIN PATRÓN -->
+
+      <a href="#" class="tarjeta-fila">
+        <span class="tarjeta-fila-icono">🏷️</span>
+        <div class="tarjeta-fila-cuerpo">
+          <h3>Comercialización asociativa</h3>
+          <span class="tarjeta-meta">Venta colectiva a mercados locales y compradores institucionales</span>
+        </div>
+        <span class="tarjeta-fila-accion">Conocer más</span>
+      </a>
+
+      <a href="#" class="tarjeta-fila">
+        <span class="tarjeta-fila-icono">📦</span>
+        <div class="tarjeta-fila-cuerpo">
+          <h3>Almacenamiento poscosecha</h3>
+          <span class="tarjeta-meta">Espacios de acopio para reducir pérdidas antes de la venta</span>
+        </div>
+        <span class="tarjeta-fila-accion">Conocer más</span>
+      </a>
+
     </div>
   </section>
 
