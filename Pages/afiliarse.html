@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afiliarse — Asociación Campesina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../Pages/Assets/CSS/style.css">
+</head>
+<body>
+
+  <!-- NAVEGACIÓN (idéntica en todas las páginas) -->
+   <div id="header-placeholder"></div>
+
+  <!-- CABECERA DE PÁGINA -->
+  <section class="page-hero" hidden>
+    <div class="contenedor">
+      <span class="eyebrow">Afiliarse</span>
+      <h1>Únete a la asociación</h1>
+      <p>Completa este formulario para iniciar tu proceso de afiliación. Un miembro del equipo revisará tu solicitud y se pondrá en contacto contigo.</p>
+    </div>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section class="seccion-contenido">
+    <div class="contenedor">
+      <div class="formulario-wrap">
+
+        <div class="form-progreso" aria-hidden="true">
+          <span class="activo"></span>
+          <span class="activo"></span>
+          <span class="activo"></span>
+          <span></span>
+        </div>
+
+        <form action="#" method="post">
+
+          <!-- GRUPO: DATOS PERSONALES -->
+          <fieldset class="form-grupo">
+            <h2>Datos personales</h2>
+            <p class="form-grupo-nota">Información básica para identificarte como solicitante.</p>
+
+            <div class="campo-fila">
+              <div class="campo">
+                <label for="nombres">Nombres</label>
+                <input type="text" id="nombres" name="nombres" required>
+              </div>
+              <div class="campo">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+              </div>
+            </div>
+
+            <div class="campo-fila">
+              <div class="campo">
+                <label for="documento">Número de documento</label>
+                <input type="text" id="documento" name="documento" required>
+              </div>
+              <div class="campo">
+                <label for="fecha-nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+              </div>
+            </div>
+
+            <div class="campo-fila">
+              <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" required>
+              </div>
+              <div class="campo">
+                <label for="telefono">Teléfono / celular</label>
+                <input type="tel" id="telefono" name="telefono" required>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="mensaje">Cuéntanos brevemente por qué quieres afiliarte <span class="opcional">(opcional)</span></label>
+              <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
+          </fieldset>
+
+          <!-- GRUPO: CONFIRMACIÓN -->
+          <fieldset class="form-grupo">
+            <h2>Confirmación</h2>
+
+            <div class="campo">
+              <label class="opcion">
+                <input type="checkbox" name="veracidad" required>
+                Declaro que la información suministrada es veraz.
+              </label>
+            </div>
+            <div class="campo">
+              <label class="opcion">
+                <input type="checkbox" name="terminos" required>
+                He leído y acepto los estatutos y condiciones de afiliación de la asociación.
+              </label>
+            </div>
+
+            <div class="form-envio">
+              <span class="form-ayuda">Recibirás una respuesta en un plazo máximo de 10 días hábiles.</span>
+              <button type="submit" class="btn-primario">Enviar solicitud</button>
+            </div>
+          </fieldset>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="../Partials/JavaScript/script.js"></script>
+  <script src="../Partials/JavaScript/unir.js"></script>
+
+</body>
+</html>

@@ -7,30 +7,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../CSS/style.css">
+<link rel="stylesheet" href="../Pages/Assets/CSS/style.css">
 </head>
 <body>
 
   <!-- NAVEGACIÓN (idéntica en todas las páginas) -->
-  <header class="header">
-    <nav class="nav">
-      <a href="/" class="logo">
-        <img src="https://placehold.co/36x36/2F3B24/FAFAF6?text=AC" alt="Logo Asociación">
-        <span>Asociación Campesina</span>
-      </a>
-      <ul class="nav-links">
-        <li><a href="/asociacion">Asociación</a></li>
-        <li><a href="/campesinos">Campesinos</a></li>
-        <li><a href="/produccion-mercado" aria-current="page">Producción y Mercado</a></li>
-        <li><a href="/recursos">Recursos</a></li>
-      </ul>
-      <a href="/afiliarse" class="btn-afiliarse">Afiliarse</a>
-      <button class="nav-toggle" aria-label="Abrir menú">☰</button>
-    </nav>
-  </header>
+   <div id="header-placeholder"></div>
 
   <!-- CABECERA DE PÁGINA -->
-  <section class="page-hero">
+  <section class="page-hero" hidden>
     <div class="contenedor">
       <span class="eyebrow">Producción y Mercado</span>
       <h1>Lo que se cultiva, cómo se cultiva y cómo llega al mercado</h1>
@@ -39,7 +24,7 @@
   </section>
 
   <!-- MÉTODOS DE PRODUCCIÓN: mismo patrón de banner que la página de inicio -->
-  <section class="banner-noticias metodos-produccion">
+  <section class="banner-noticias metodos-produccion" hidden>
     <div class="banner-inner">
       <h2 class="titulo-bloque titulo-banner">Métodos de producción</h2>
 
@@ -71,7 +56,7 @@
   </section>
 
   <!-- SUBSECCIÓN: PRODUCTOS -->
-  <section class="seccion-contenido" id="productos">
+  <section class="seccion-contenido" id="productos" hidden>
     <div class="contenedor">
       <h2 class="titulo-bloque">Productos</h2>
       <p class="intro-subseccion">Catálogo de productos cultivados por los asociados, con su temporada y origen.</p>
@@ -128,7 +113,8 @@
           </div>
         </article>
 
-        <article class="tarjeta">
+        <!--
+        <article class="tarjeta" hidden>
           <div class="tarjeta-imagen">
             <img src="https://placehold.co/400x300/E8E3D3/2F3B24?text=Producto" alt="Fotografía del producto">
           </div>
@@ -140,8 +126,10 @@
             <a href="#" class="tarjeta-enlace">Ver detalle</a>
           </div>
         </article>
+        -->
 
-        <article class="tarjeta">
+        <!--
+        <article class="tarjeta" hidden>
           <div class="tarjeta-imagen">
             <img src="https://placehold.co/400x300/E8E3D3/2F3B24?text=Producto" alt="Fotografía del producto">
           </div>
@@ -153,8 +141,10 @@
             <a href="#" class="tarjeta-enlace">Ver detalle</a>
           </div>
         </article>
+        -->
 
-        <article class="tarjeta">
+        <!-- 
+        <article class="tarjeta" hidden>
           <div class="tarjeta-imagen">
             <img src="https://placehold.co/400x300/E8E3D3/2F3B24?text=Producto" alt="Fotografía del producto">
           </div>
@@ -166,6 +156,7 @@
             <a href="#" class="tarjeta-enlace">Ver detalle</a>
           </div>
         </article>
+        -->
 
       </div>
 
@@ -192,6 +183,7 @@
       </a>
       <!-- FIN PATRÓN -->
 
+      <!--
       <a href="#" class="tarjeta-fila">
         <span class="tarjeta-fila-icono">🏷️</span>
         <div class="tarjeta-fila-cuerpo">
@@ -200,7 +192,9 @@
         </div>
         <span class="tarjeta-fila-accion">Conocer más</span>
       </a>
+      -->
 
+      <!--
       <a href="#" class="tarjeta-fila">
         <span class="tarjeta-fila-icono">📦</span>
         <div class="tarjeta-fila-cuerpo">
@@ -209,13 +203,14 @@
         </div>
         <span class="tarjeta-fila-accion">Conocer más</span>
       </a>
-
+      -->
     </div>
   </section>
 
-  <footer class="footer">
-    <p>© 2026 Asociación Campesina</p>
-  </footer>
+  <div id="footer-placeholder"></div>
+
+  <script src="../Partials/JavaScript/script.js"></script>
+  <script src="../Partials/JavaScript/unir.js"></script>
 
 </body>
 </html>
