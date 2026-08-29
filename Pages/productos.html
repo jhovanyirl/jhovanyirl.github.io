@@ -14,15 +14,6 @@
   <!-- NAVEGACIÓN (idéntica en todas las páginas) -->
    <div id="header-placeholder"></div>
 
-  <!-- CABECERA DE PÁGINA -->
-  <section class="page-hero" hidden>
-    <div class="contenedor">
-      <span class="eyebrow">Producción y Mercado</span>
-      <h1>Lo que se cultiva, cómo se cultiva y cómo llega al mercado</h1>
-      <p>Productos, servicios y métodos de producción de la asociación, actualizados con cada temporada.</p>
-    </div>
-  </section>
-
   <!-- MÉTODOS DE PRODUCCIÓN: mismo patrón de banner que la página de inicio -->
   <section class="banner-noticias metodos-produccion" hidden>
     <div class="banner-inner">
@@ -56,11 +47,11 @@
   </section>
 
   <!-- SUBSECCIÓN: PRODUCTOS -->
-  <section class="seccion-contenido" id="productos" hidden>
+  <section class="page-hero" id="productos">
     <div class="contenedor">
-      <h2 class="titulo-bloque">Productos</h2>
-      <p class="intro-subseccion">Catálogo de productos cultivados por los asociados, con su temporada y origen.</p>
+      <h1 class="titulo-bloque"><b>Productos</b></h1>
 
+      <!--
       <div class="filtros">
         <button class="filtro activo">Todos</button>
         <button class="filtro">Granos</button>
@@ -69,37 +60,39 @@
         <button class="filtro">Hortalizas</button>
         <button class="filtro">Cacao y café</button>
       </div>
+      -->
 
       <div class="grid-tarjetas">
 
         <!-- PATRÓN DE TARJETA — copiar para añadir un nuevo producto -->
         <article class="tarjeta">
           <div class="tarjeta-imagen">
-            <img src="https://placehold.co/400x300/E8E3D3/2F3B24?text=Producto" alt="Fotografía del producto">
+            <img src="../Pages/Assets/Images/IMG-20260827-WA0000.jpg" alt="Fotografía del producto">
           </div>
           <div class="tarjeta-cuerpo">
-            <span class="tarjeta-etiqueta">Tubérculos</span>
-            <h3>Papa criolla</h3>
+            <span class="tarjeta-etiqueta">Alimento</span>
+            <h3>Heno</h3>
             <span class="tarjeta-meta">Cosecha: junio – agosto · Boyacá</span>
             <p class="descripcion-breve">Producción agroecológica disponible para venta directa y mercados campesinos aliados.</p>
-            <a href="#" class="tarjeta-enlace">Ver detalle</a>
+            <a href="solicitar.html" class="btn-afiliarse">Solicitar</a>
           </div>
         </article>
         <!-- FIN PATRÓN -->
 
         <article class="tarjeta">
           <div class="tarjeta-imagen">
-            <img src="https://placehold.co/400x300/E8E3D3/2F3B24?text=Producto" alt="Fotografía del producto">
+            <img src="../Pages/Assets/Images/IMG-20260827-WA0003(1).jpg" alt="Fotografía del producto">
           </div>
           <div class="tarjeta-cuerpo">
-            <span class="tarjeta-etiqueta">Cacao y café</span>
-            <h3>Cacao fino de aroma</h3>
+            <span class="tarjeta-etiqueta">Alimento</span>
+            <h3>Silo</h3>
             <span class="tarjeta-meta">Cosecha: octubre – diciembre · Nariño</span>
             <p class="descripcion-breve">Certificado orgánico, cultivado bajo sistemas agroforestales de sombra.</p>
-            <a href="#" class="tarjeta-enlace">Ver detalle</a>
+            <a href="solicitar.html" class="btn-afiliarse">Solicitar</a>
           </div>
         </article>
 
+        <!--
         <article class="tarjeta">
           <div class="tarjeta-imagen">
             <img src="https://placehold.co/400x300/E8E3D3/2F3B24?text=Producto" alt="Fotografía del producto">
@@ -112,6 +105,7 @@
             <a href="#" class="tarjeta-enlace">Ver detalle</a>
           </div>
         </article>
+        -->
 
         <!--
         <article class="tarjeta" hidden>
@@ -163,47 +157,6 @@
       <div class="cargar-mas">
         <button class="btn-secundario">Cargar más productos</button>
       </div>
-    </div>
-  </section>
-
-  <!-- SUBSECCIÓN: SERVICIOS -->
-  <section class="seccion-contenido" id="servicios">
-    <div class="contenedor">
-      <h2 class="titulo-bloque">Servicios</h2>
-      <p class="intro-subseccion">Servicios relacionados con la comercialización y el acceso al mercado.</p>
-
-      <!-- PATRÓN DE TARJETA EN FILA — copiar para añadir un nuevo servicio -->
-      <a href="#" class="tarjeta-fila">
-        <span class="tarjeta-fila-icono">🚚</span>
-        <div class="tarjeta-fila-cuerpo">
-          <h3>Logística y transporte de cosecha</h3>
-          <span class="tarjeta-meta">Coordinación de recolección y traslado a puntos de venta</span>
-        </div>
-        <span class="tarjeta-fila-accion">Solicitar</span>
-      </a>
-      <!-- FIN PATRÓN -->
-
-      <!--
-      <a href="#" class="tarjeta-fila">
-        <span class="tarjeta-fila-icono">🏷️</span>
-        <div class="tarjeta-fila-cuerpo">
-          <h3>Comercialización asociativa</h3>
-          <span class="tarjeta-meta">Venta colectiva a mercados locales y compradores institucionales</span>
-        </div>
-        <span class="tarjeta-fila-accion">Conocer más</span>
-      </a>
-      -->
-
-      <!--
-      <a href="#" class="tarjeta-fila">
-        <span class="tarjeta-fila-icono">📦</span>
-        <div class="tarjeta-fila-cuerpo">
-          <h3>Almacenamiento poscosecha</h3>
-          <span class="tarjeta-meta">Espacios de acopio para reducir pérdidas antes de la venta</span>
-        </div>
-        <span class="tarjeta-fila-accion">Conocer más</span>
-      </a>
-      -->
     </div>
   </section>
 
